@@ -1,6 +1,6 @@
 # Ricoh Media Storage for Java
 
-This open-source library allows you to integrate Ricoh Media Storage into your Android app.
+This open-source library allows you to integrate Ricoh Media Storage into your Java app.
 
 Learn more at http://docs.ricohapi.com/
 

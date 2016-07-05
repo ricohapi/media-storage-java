@@ -36,6 +36,7 @@ public class RicohAPIRequest {
 
     public void get(Map<String, String> header) throws IOException {
         connection.setRequestMethod("GET");
+        connection.setDoOutput(false);
         for (String key : header.keySet()) {
             connection.setRequestProperty(key, header.get(key));
         }
@@ -43,6 +44,7 @@ public class RicohAPIRequest {
 
     public InputStream download(Map<String, String> header) throws IOException {
         connection.setRequestMethod("GET");
+        connection.setDoOutput(false);
         for (String key : header.keySet()) {
             connection.setRequestProperty(key, header.get(key));
         }
@@ -51,6 +53,7 @@ public class RicohAPIRequest {
 
     public void post(Map<String, String> header, Map<String, String> params) throws IOException {
         connection.setRequestMethod("POST");
+        connection.setDoOutput(true);
         for (String key : header.keySet()) {
             connection.setRequestProperty(key, header.get(key));
         }
@@ -60,6 +63,7 @@ public class RicohAPIRequest {
 
     public void delete(Map<String, String> header) throws IOException {
         connection.setRequestMethod("DELETE");
+        connection.setDoOutput(false);
         for (String key : header.keySet()) {
             connection.setRequestProperty(key, header.get(key));
         }
@@ -67,6 +71,7 @@ public class RicohAPIRequest {
 
     public void upload(Map<String, String> header, InputStream inputStream) throws IOException {
         connection.setRequestMethod("POST");
+        connection.setDoOutput(true);
         for (String key : header.keySet()) {
             connection.setRequestProperty(key, header.get(key));
         }
