@@ -19,7 +19,7 @@ If you don't have them, please register yourself and your client from [THETA Dev
 This section shows you to install Ricoh Media Storage for Java in your application.
 See [Media Storage Sample](https://github.com/ricohapi/media-storage-java/tree/master/sample#media-storage-sample) to try out a sample of Ricoh Media Storage for Java.
 
-* Download: [`ricoh-api-mstorage.jar`](https://github.com/ricohapi/media-storage-java/blob/v1.0.0/lib/ricoh-api-mstorage.jar?raw=true)
+* Download: [`ricoh-api-mstorage.jar`](https://github.com/ricohapi/media-storage-java/blob/v1.1.1/lib/ricoh-api-mstorage.jar?raw=true)
 * Drag `ricoh-api-mstorage.jar` into a directory (ex. `libs`) of your application.
 * Edit your application's `build.gradle` as follows.
 ```java
